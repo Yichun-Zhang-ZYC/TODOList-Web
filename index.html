@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Todo List</h1>
+    <section>
+        <h2>Tests and Assignments</h2>
+        <ul id="tests-list">
+            <!-- 测试和作业列表将显示在这里 -->
+        </ul>
+        <!-- 添加新的测试或作业 -->
+        <div>
+            <input type="text" id="new-test-name" placeholder="Enter new test or assignment" />
+            <input type="date" id="new-test-date" />
+            <button onclick="addTest()">Add Test/Assignment</button>
+        </div>
+    </section>
+    <section>
+        <h2>Calendar</h2>
+        <div id="calendar">
+            <!-- 日历视图将显示在这里 -->
+        </div>
+    </section>
+    <section>
+        <h2>Overdue</h2>
+        <ul id="overdue-list">
+            <!-- 过期任务列表将显示在这里 -->
+        </ul>
+    </section>
+    <section>
+        <h2>Unassigned Todos</h2>
+        <ul id="unassigned-list">
+            <!-- 未指派任务列表将显示在这里 -->
+        </ul>
+        <!-- 添加新的待办事项 -->
+        <div>
+            <input type="text" id="new-todo-name" placeholder="Enter new todo" />
+            <button onclick="addTodo()">Add Todo</button>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
+
+<section>
+    <h2>Completed</h2>
+    <ul id="completed-list">
+        <!-- 完成的任务将显示在这里 -->
+    </ul>
+</section>

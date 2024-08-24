@@ -1,0 +1,91 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+section {
+    background: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+h2 {
+    color: #5a5a5a;
+}
+
+#calendar {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.calendar-day {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    min-height: 100px;
+}
+
+
+
+button {
+    padding: 5px 10px;
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin: 2px;
+}
+
+button.selected {
+    background-color: #eee;
+}
+
+
+input[type="text"], input[type="date"] {
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    width: calc(100% - 120px);  
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #f4f4f9;
+    border: 1px solid #ccc;
+}
+
+
+.calendar-day {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    min-height: 150px; /* 增加高度，便于任务显示 */
+}
+
+.calendar-day hr {
+    width: 100%;
+    border: 0.5px solid #ddd; /* 日期下方的线条样式 */
+}
